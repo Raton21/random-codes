@@ -3,13 +3,13 @@
  * 
  * Using Motor Shield L298P controld 2 LED strips. 
  * 
- * After fallink pulse, turns LED for specified time
+ * After falling pulse, turns LED for specified time
  */
-#define LEDPulze 1300  //LED on time (in microseconds)
+#define LEDPulse 1300  //LED on time (in microseconds)
 
 
 #define sensorPin 2 
-//Pinf for L298P shield
+//Pins for L298P shield
 #define enablePin1 12
 #define brakePin1 9
 #define enablePin2 13
@@ -57,8 +57,8 @@ void loop(){
   {
 
     LEDControl();
-    //delay(LEDPulze);
-    delayMicroseconds(LEDPulze);
+    //delay(LEDPulse);
+    delayMicroseconds(LEDPulse);
     led = 0;
     LEDControl();
   }
